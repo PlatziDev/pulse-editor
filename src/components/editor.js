@@ -10,7 +10,7 @@ import setSelectionRange from '../utils/set-selection-range'
 import createChangeEvent from '../utils/create-change-event'
 import getKeyName from '../utils/get-key-name'
 
-class LabEditor extends Component {
+class PulseEditor extends Component {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
@@ -21,9 +21,9 @@ class LabEditor extends Component {
   };
 
   static defaultProps = {
-    className: 'LabEditor',
+    className: 'PulseEditor',
     defaultValue: '',
-    name: 'lab-editor',
+    name: 'pulse-editor',
     parser: {},
     editorRef: () => {},
   };
@@ -91,7 +91,7 @@ class LabEditor extends Component {
   }
 
   componentDidMount () {
-    this.domField = document.getElementById(`labeditor-${this.props.name}`)
+    this.domField = document.getElementById(`pulse-editor-${this.props.name}`)
   }
 
   /**
@@ -298,4 +298,4 @@ class LabEditor extends Component {
   }
 }
 
-export default LabEditor
+export default PulseEditor

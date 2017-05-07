@@ -13,7 +13,7 @@ class EmojiBar extends Component {
   };
 
   static defaultProps = {
-    className: 'LabEditor-emojiBar'
+    className: 'PulseEditor-emojiBar'
   };
 
   static contextTypes = {

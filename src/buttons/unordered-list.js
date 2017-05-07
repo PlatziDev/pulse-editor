@@ -31,7 +31,7 @@ class ButtonUnorderedList extends Component {
   };
 
   static defaultProps = {
-    className: 'LabEditor-button'
+    className: 'PulseEditor-button'
   };
 
   static contextTypes = {

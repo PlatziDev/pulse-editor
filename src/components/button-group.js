@@ -15,7 +15,7 @@ ButtonGroup.propTypes = {
 }
 
 ButtonGroup.defaultProps = {
-  className: 'LabEditor-buttonGroup'
+  className: 'PulseEditor-buttonGroup'
 }
 
 export default ButtonGroup

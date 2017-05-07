@@ -30,7 +30,7 @@ BaseButton.propTypes = {
 }
 
 BaseButton.defaultProps = {
-  className: 'LabEditor-button',
+  className: 'PulseEditor-button',
   disabled: false,
   onClick: emptyFunc
 }

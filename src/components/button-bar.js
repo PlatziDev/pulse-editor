@@ -15,7 +15,7 @@ ButtonBar.propTypes = {
 }
 
 ButtonBar.defaultProps = {
-  className: 'LabEditor-buttonBar'
+  className: 'PulseEditor-buttonBar'
 }
 
 export default ButtonBar

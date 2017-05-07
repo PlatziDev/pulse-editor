@@ -8,7 +8,7 @@ class Field extends Component {
   };
 
   static defaultProps = {
-    className: 'LabEditor-field'
+    className: 'PulseEditor-field'
   };
 
   static contextTypes = {
@@ -35,7 +35,7 @@ class Field extends Component {
         {...this.props}
         className={this.props.className}
         disabled={this.context.disabled}
-        id={`labeditor-${this.context.name}`}
+        id={`pulse-editor-${this.context.name}`}
         onChange={this.handleChange}
         onKeyDown={this.handleKeyDown}
         value={this.context.value}
