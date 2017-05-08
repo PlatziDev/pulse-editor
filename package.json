@@ -30,7 +30,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "babel ./src --out-dir ./built",
-    "lint": "standard './src/**/*.js'"
+    "lint": "standard './src/**/*.js' './examples/**/*.js'"
   },
   "directories": {
     "lib": "./built"
