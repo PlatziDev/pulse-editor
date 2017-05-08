@@ -1,5 +1,5 @@
 # Pulse Editor
-Tha Platzi Flavored Markdown extensible and customizable editor.
+A React markdown editor, extensible and fully customizable
 
 ## Installation
 To install this editor just run:

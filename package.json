@@ -1,7 +1,7 @@
 {
   "name": "pulse-editor",
   "version": "1.0.0",
-  "description": "The Platzi Flavored Markdown extensible and customizable editor.",
+  "description": "A React markdown editor, extensible and fully customizable.",
   "keywords": [
     "Platzi",
     "markdown",
