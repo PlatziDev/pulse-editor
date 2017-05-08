@@ -215,6 +215,19 @@ class PulseEditor extends Component {
     const keyCode = event.keyCode || event.which
     const keyName = getKeyName(keyCode)
 
+    if (keyName === 'tab') {
+      event.preventDefault();
+      const { start, end } = getSelection(this.domField);
+      const currentValue = this.state.value;
+      const newValue = `${currentValue.substring(0, start)}\t${currentValue.substring(end)}`;
+      return this.setState({ value: newValue },
+        () => {
+          this.domField.selectionEnd = start + 1;
+          this.handleChange(event);
+        },
+      );
+    }
+
     if (this.shortcuts.has(keyName)) {
       const {
         metaKey = false,
