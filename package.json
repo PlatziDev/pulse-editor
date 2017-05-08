@@ -11,9 +11,9 @@
     "pfm"
   ],
   "main": "./index.js",
-  "homepage": "https://github.com/PlatziDev/editor",
-  "repository": "PlatziDev/editor",
-  "bugs": "https://github.com/PlatziDev/editor/issues",
+  "homepage": "https://github.com/PlatziDev/pulse-editor",
+  "repository": "PlatziDev/pulse-editor",
+  "bugs": "https://github.com/PlatziDev/pulse-editor/issues",
   "author": [
     {
       "name": "Sergio Daniel Xalambrí",
