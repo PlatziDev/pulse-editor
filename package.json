@@ -28,6 +28,7 @@
     "index.js"
   ],
   "scripts": {
+    "prepublish": "npm run build",
     "build": "babel ./src --out-dir ./built",
     "lint": "standard './src/**/*.js'"
   },
