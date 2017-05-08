@@ -17,7 +17,7 @@ class PulseEditor extends Component {
     defaultValue: PropTypes.string,
     name: PropTypes.string,
     parser: PropTypes.object,
-    editorRef: PropTypes.func,
+    editorRef: PropTypes.func
   };
 
   static defaultProps = {
@@ -25,7 +25,7 @@ class PulseEditor extends Component {
     defaultValue: '',
     name: 'pulse-editor',
     parser: {},
-    editorRef: () => {},
+    editorRef: () => {}
   };
 
   static childContextTypes = {
@@ -65,11 +65,11 @@ class PulseEditor extends Component {
    */
   shortcuts = map();
 
-  constructor(props, context) {
-    super(props, context);
+  constructor (props, context) {
+    super(props, context)
     if (props.editorRef) {
       // pass editor instance ref to parent component
-      props.editorRef(this);
+      props.editorRef(this)
     }
   }
 
@@ -216,16 +216,16 @@ class PulseEditor extends Component {
     const keyName = getKeyName(keyCode)
 
     if (keyName === 'tab') {
-      event.preventDefault();
-      const { start, end } = getSelection(this.domField);
-      const currentValue = this.state.value;
-      const newValue = `${currentValue.substring(0, start)}\t${currentValue.substring(end)}`;
+      event.preventDefault()
+      const { start, end } = getSelection(this.domField)
+      const currentValue = this.state.value
+      const newValue = `${currentValue.substring(0, start)}\t${currentValue.substring(end)}`
       return this.setState({ value: newValue },
         () => {
-          this.domField.selectionEnd = start + 1;
-          this.handleChange(event);
-        },
-      );
+          this.domField.selectionEnd = start + 1
+          this.handleChange(event)
+        }
+      )
     }
 
     if (this.shortcuts.has(keyName)) {
@@ -276,7 +276,7 @@ class PulseEditor extends Component {
         // set the scroll position
         this.domField.scrollTop = scrollTop
         // update value
-        this.handleChange({ type: 'PICK_EMOJI', target: this.domField, emojiCode: code });
+        this.handleChange({ type: 'PICK_EMOJI', target: this.domField, emojiCode: code })
       }
     )
   };
