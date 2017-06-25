@@ -17,7 +17,7 @@ npm i -S pulse-editor
 ## Usage example
 ```javascript
 import React, { Component } from 'react'
-import { Editor, ButtonBar, ButtonGroup, Field, Preview, EmojiBar } from 'pulse-editor'
+import { Editor, ButtonBar, ButtonGroup, Field, Preview, EmojiBar, EmojiItem, EmojiCode } from 'pulse-editor'
 import {
   Base,
   Bold,
@@ -87,7 +87,7 @@ class MyEditor extends Component {
             <ButtonGroup>
               <Bold><strong>B</strong></Bold>
               <Italic><em>I</em></Italic>
-              <Underline>U</Underline>
+              <Underline><ins>U</ins></Underline>
             </ButtonGroup>
 
             <ButtonGroup>
@@ -112,7 +112,10 @@ class MyEditor extends Component {
             <Field style={{ height: '39px' }} />
           </div>
 
-          <EmojiBar />
+          {/* we can just render EmojiBar or customize the item and code */}
+          <EmojiBar>
+            <EmojiItem><EmojiCode /></EmojiItem>
+          </EmojiBar>
         </Editor>
         <button type="submit">Send form</button>
       </form>
