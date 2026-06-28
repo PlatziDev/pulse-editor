@@ -2,7 +2,7 @@
   "name": "full-usage",
   "license": "MIT",
   "dependencies": {
-    "next": "^2.3.1",
+    "next": "^16.2.9",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "pulse-editor": "^1.0.0"

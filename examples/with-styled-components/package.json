@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.1.5",
-    "next": "^2.4.4",
+    "next": "^16.2.9",
     "pulse-editor": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
